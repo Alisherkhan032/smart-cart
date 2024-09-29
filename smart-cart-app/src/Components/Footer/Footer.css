@@ -1,0 +1,36 @@
+.footer{
+    width: 100vw;
+    /* margin: 0 auto; */
+    margin-top: 20px;
+    margin-bottom: -16px;
+    text-align: center;
+    background-color: rgba(156, 214, 233, 0.32)
+}
+
+.first-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first-line p{
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, ;
+}
+.first-line img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.second-line a{
+    margin-inline: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    cursor: pointer;
+}
+.socials i{
+    margin-inline: 10px;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,26 @@
+/* src/Components/Trending/Trending.css */
+.trending {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .trending h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .trending hr{
+    width: 200px;
+    height: 3px;
+    border: none;          /* Remove the default border */
+    background-color: #ff4141; /* Use background color for the red line */
+    margin: 0 auto 40px auto;
+  }
+  
+  .trending-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }

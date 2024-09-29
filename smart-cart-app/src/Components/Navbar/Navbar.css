@@ -1,0 +1,140 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 10px;
+  padding-block: 0;
+  background-color: rgba(156, 214, 233, 0.498)
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: black; /* Change this to your desired color */
+  margin-top: 5px;
+}
+nav ul li {
+  list-style: none;
+  padding-bottom: 5px;
+}
+
+nav ul li a:hover, nav ul li:hover {
+  color: rgb(44, 11, 255);
+  transform: scale(1.01);
+  transition: transform 0.3s;
+
+}
+
+nav .title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+nav .title img {
+  width: 40px;
+  height: 40px;
+}
+
+nav .title h2 {
+  font-size: 1.6em;
+  font-weight: 400;
+  font-family: "Alegreya", serif;
+}
+
+nav .links ul {
+  display: flex;
+  gap: 15px;
+}
+
+nav .links ul li a {
+  font-size: 1.1em;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+/* This selector might be too broad and could affect all `nav` elements */
+nav .login ul, nav .login ul li:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav li:last-child img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+nav li:last-child span {
+  font-size: x-large;
+  background-color: rgb(0, 21, 255);
+  padding: 5px;
+  border-radius: 50%;
+  color: white;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav li button {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow, transform;
+  background: radial-gradient(100% 100% at 100% 0%, #0bb2e0 0%, #5468ff 100%);
+  box-shadow: 0px 2px 4px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%),
+    inset 0px -3px 0px rgb(58 65 111 / 50%);
+  padding: 0 32px;
+  border-radius: 6px;
+  color: #fff;
+  height: 30px;
+  font-size: .9em;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+nav li button:hover {
+  box-shadow: 0px 4px 8px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3c4fe0;
+  transform: translateY(-2px);
+}
+
+nav li button:active {
+  box-shadow: inset 0px 3px 7px #3c4fe0;
+  transform: translateY(2px);
+}
+
+/* The following might not be applicable to buttons but is left as-is */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087caf9;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087cac1;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
