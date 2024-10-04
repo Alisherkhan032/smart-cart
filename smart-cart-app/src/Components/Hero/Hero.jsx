@@ -10,7 +10,7 @@ const Hero = () => {
                 <div>
                     <div className="hand-icon-div">
                         <img src={handIcon} alt="handIconPng" />
-                        <p>New</p>
+                        <p>Smart</p>
                     </div>
                     <p>collections</p>
                     <p>for smart GEN</p>
