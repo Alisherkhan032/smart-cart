@@ -9,7 +9,8 @@ import kid_banner from './Components/Assets/Banners/banner_kid.png'
 import men_banner from './Components/Assets/Banners/banner_men.png'
 import women_banner from './Components/Assets/Banners/banner_women.png'
 import Navbar from './Components/Navbar/Navbar';
-import Footer from './Components/Footer/Footer'
+import Footer from './Components/Footer/Footer';
+import Login from './pages/Login'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path='/cart' element={<Cart />}/>
         <Route path='/login-signup' element={<LoginSignup />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
       <Footer />
     </Router>
