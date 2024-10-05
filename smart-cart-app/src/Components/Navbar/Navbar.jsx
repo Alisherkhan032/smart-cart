@@ -1,12 +1,15 @@
 import cart_icon from "../Assets/cart_icon.png";
 import logo from "../Assets/logo.png";
 import { Link, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { ShopContext } from "../../context/ShopContext";
 import "./Navbar.css";
 
 const Navbar = () => {
   const location = useLocation();
   const [menu, setMenu] = useState("");
+  const {getTotalCartItems} = useContext(ShopContext);
+  // console.log('number is ',getTotalCartItems())
 
   // Set the menu based on the current path
   useEffect(() => {
@@ -20,7 +23,7 @@ const Navbar = () => {
       case "/women":
         setMenu("ShopWomen");
         break;
-      case "/kids":
+      case "/kid":
         setMenu("ShopKids");
         break;
       case "/contact":
@@ -44,28 +47,28 @@ const Navbar = () => {
           <li
             className="hover-underline-animation"
           >
-            <Link to="/shop">Shop All</Link>
+            <Link to="/shop">Home</Link>
             {menu === "ShopAll" && <hr />}
           </li>
 
           <li
             className="hover-underline-animation"
           >
-            <Link to="/men">Shop Men</Link>
+            <Link to="/men">Men</Link>
             {menu === "ShopMen" && <hr />}
           </li>
 
           <li
             className="hover-underline-animation"
           >
-            <Link to="/women">Shop Women</Link>
+            <Link to="/women">Women</Link>
             {menu === "ShopWomen" && <hr />}
           </li>
 
           <li
             className="hover-underline-animation"
           >
-            <Link to="/kids">Shop Kids</Link>
+            <Link to="/kid">Kids</Link>
             {menu === "ShopKids" && <hr />}
           </li>
 
@@ -88,7 +91,7 @@ const Navbar = () => {
             <Link to="/cart">
               <img src={cart_icon} alt="cart-icon" />
             </Link>
-            <span className="item-number">0</span>
+            <span className="item-number">{getTotalCartItems()}</span>
           </li>
         </ul>
       </div>

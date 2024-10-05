@@ -22,7 +22,10 @@ const Trending = () => {
             <hr />
             <div className="trending-item">
               {data_object_trending_products_men.map((item, i)=>{
-                return <Item itemInfo={item} key={i} />
+                return <>
+                  <Item itemInfo={item} key={i} />
+                  
+                </>
               })}
             </div>
         </div>
@@ -32,7 +35,7 @@ const Trending = () => {
             <hr />
             <div className="trending-item">
               {data_object_trending_products_child.map((item, i)=>{
-                return <Item itemInfo={item} key={i} />
+                return <Item itemInfo={item} key={item.id} />
               })}
             </div>
         </div>

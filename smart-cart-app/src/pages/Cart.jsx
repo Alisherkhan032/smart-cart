@@ -1,6 +1,10 @@
+import CartItem from "../Components/CartItem/CartItem";
+
 const App = () => {
     return ( 
-        <div>This is Cart</div>
+        <div>
+            <CartItem />
+        </div>
      );
 }
  

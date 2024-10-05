@@ -5,7 +5,7 @@ import p4_img from '../Trending_kids/c_trending_4.png';
 
 export const data_object_trending_products_child =[
     {
-        id: 1,
+        id: 28,
         name: 'Stylish Green Hoodie',
         description: "This is a description of the product. It is a very good product. You should buy it.",
         image: p1_img,
@@ -13,7 +13,7 @@ export const data_object_trending_products_child =[
         new_cost: 850
     },
     {
-        id: 2,
+        id: 31,
         name: 'Stylish Denim Jacket',
         description: "This is a description of the product. It is a very good product. You should buy it.",
         image: p2_img,
@@ -21,7 +21,7 @@ export const data_object_trending_products_child =[
         new_cost: 1800
     },
     {
-        id: 3,
+        id: 35,
         name: 'Stylish Orange T-shirt',
         description: "This is a description of the product. It is a very good product. You should buy it.",
         image: p3_img,
@@ -29,7 +29,7 @@ export const data_object_trending_products_child =[
         new_cost: 1000
     },
     {
-        id: 4,
+        id: 30,
         name: 'Golden Overcoat',
         description: "This is a description of the product. It is a very good product. You should buy it.",
         image: p4_img,

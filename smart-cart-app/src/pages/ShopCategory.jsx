@@ -6,9 +6,9 @@ import dropdown_icon from '../Components/Assets/dropdown_icon.png'
 import Item from '../Components/Item/Item';
 
 const ShopCategory = ({category, banner}) => {
-    const products = useContext(ShopContext);
-    const category_products = products.filter(prod => prod.category === category)
-    console.log(products)
+    const {all_products} = useContext(ShopContext);
+    const category_products = all_products.filter(prod => prod.category === category)
+    
     return ( 
         <div className="shop-category">
             <img className='shopcategory-banner' src={banner} alt={category} />
