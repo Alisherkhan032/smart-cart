@@ -19,17 +19,19 @@ const ShopContextProvider = ({children}) => {
     //* This cart variable will be a key-value pair, where key is the ID of the product, and value would be the number of times, it is added to cart.
 
     const addProductToCart = (productId)=>{
-        setCart((prevCart)=>{
-            return {
-                ...prevCart,
-                [productId] : (prevCart[productId] || 0) + 1
-            }
-        })
+        let newCart = { ...cart, [productId]: (cart[productId] || 0) + 1 };
+        setCart(newCart);
+        // setCart((prevCart)=>{
+        //     return {
+        //         ...prevCart,
+        //         [productId] : (prevCart[productId] || 0) + 1
+        //     }
+        // })
     }
 
     const removeProductFromCart = (productId)=>{
         setCart((prevCart)=>{
-            // Check if the product is in the cart
+            // Check if the product is in the cart or not, if not => return
             if(!prevCart[productId]){
                 return prevCart; //Do nothing
             }

@@ -12,7 +12,6 @@ const CartItem = () => {
         const product = all_products.find(product => product.id === parseInt(productId));
         return acc + (product ? product.new_cost * quantity : 0);
     }, 0);
-
     return (
         <div className="cartitems">
             <div className="cartitems-header">

@@ -10,7 +10,6 @@ const Item = ({ itemInfo }) => {
     })
   }
 
-  console.log('item is ',itemInfo)
   return (
     <div className="item">
         <Link to={`/product/${itemInfo.id}`} onClick={handleClick}>
