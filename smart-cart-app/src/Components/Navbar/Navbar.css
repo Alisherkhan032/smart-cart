@@ -71,18 +71,7 @@ nav li:last-child img {
   cursor: pointer;
 }
 
-nav li:last-child span {
-  font-size: x-large;
-  background-color: rgb(69, 80, 199);
-  padding: 5px;
-  border-radius: 50%;
-  color: white;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 nav li button {
   display: inline-block;
@@ -137,4 +126,24 @@ nav li button:active {
 .hover-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.cart-icon:hover{
+  translate: scale(2);
+}
+.item-number{
+  position: relative;
+  top: -10px;
+  right: 20px;
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+  background-color: rgb(22, 79, 251);
+  color: white;
+  text-align: center;
+  padding: 3px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -16,7 +16,7 @@ const ShopContextProvider = ({children}) => {
         localStorage.setItem('cart', JSON.stringify(cart));
     }, [cart]);
 
-    //* This cart variable will be a key-value pair, where key is the ID of the product, and value would be the number of times, it is added to cart.
+    //* This cart variable will be a object of key-value pair, where key is the ID of the product, and value would be the number of times, it is added to cart.
 
     const addProductToCart = (productId)=>{
         let newCart = { ...cart, [productId]: (cart[productId] || 0) + 1 };
