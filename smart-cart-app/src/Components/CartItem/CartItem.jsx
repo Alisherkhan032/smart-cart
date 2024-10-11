@@ -44,7 +44,7 @@ const CartItem = () => {
                     </div>
                     <div className="cart-summary-item">
                         <span className="label">Shipping:</span>
-                        <span className="value">$10</span>
+                        <span className="value">FREE</span>
                     </div>
                     <div className="cart-summary-item">
                         <span className="label">Total:</span>
